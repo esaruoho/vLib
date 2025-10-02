@@ -1,18 +1,21 @@
 # About vLib
 
-The vLib library is a GUI library/framework, modelled after the [Renoise Viewbuilder API](https://github.com/renoise/xrnx/blob/master/Documentation/Renoise.ViewBuilder.API.lua), which specifies additional user-interface widgets that you can use in your Renoise tools. This includes a file browser, a scrollable table and other useful things.
+The vLib library is a GUI library/framework, modelled after the [Renoise Viewbuilder API](https://github.com/renoise/xrnx/blob/master/docs/API/renoise/renoise.ViewBuilder.md), which specifies additional user-interface widgets that you can use in your Renoise tools. This includes a file browser, a scrollable table and other useful things.
 
 ## Requirements
 
 vLib requires an additional library called cLib:  
-https://github.com/renoise/xrnx/tree/master/Tools/com.renoise.cLib.xrnx
+
+https://github.com/renoise/tools/tree/master/Tools/com.renoise.cLib.xrnx
 
 ## How it works
 
 vLib tries to stay as close as possible to the Renoise Viewbuilder API. This is the 'language' that Renoise tools can use for building graphical user interfaces (GUIs). 
 
-If you are not familiar with that API, it's highly recommended to study some [Viewbuilder examples](https://github.com/renoise/xrnx/tree/master/Tools/com.renoise.ExampleToolGui.xrnx) first. However, if you are familiar with the Viewbuilder API, the following syntax should be quite familiar: 
+If you are not familiar with that API, it's highly recommended to study some [Viewbuilder examples](https://github.com/renoise/tools/tree/master/Tools/com.renoise.ExampleToolGui.xrnx)
+first. However, if you are familiar with the Viewbuilder API, the following syntax should be quite familiar: 
 
+```LUA
     -- create a viewbuilder 
     local vb = renoise.ViewBuilder()
     
@@ -31,6 +34,7 @@ If you are not familiar with that API, it's highly recommended to study some [Vi
     local view = vb:row{
       toggle_button.view -- add to view using the 'view' property 
     }
+```
 
 If you look closely, you'll notice a few minor details that are different from how the Viewbuilder API is used. 
 
@@ -41,10 +45,9 @@ And secondly, we are keeping a reference to the object and handing over that obj
 ## Documentation
 
 Point your browser to this location to browse the auto-generated luadocs:  
-https://renoise.github.io/luadocs/vlib
+https://renoise.github.io/libraries/vlib
 
 ## Examples 
 
 To see vLib in action, download the tool from github:  
-https://github.com/renoise/xrnx/tree/master/Tools/com.renoise.vLib.xrnx
-
+https://github.com/renoise/tools/tree/master/Tools/com.renoise.vLib.xrnx
