@@ -46,11 +46,11 @@ function vDialog:__init(...)
   --self.dialog_hidden_observable = renoise.Document.ObservableBang()
 
   --- when dialog gains focus
-  -- TODO make it work both when invoked manually and programatically 
+  -- TODO make it work both when invoked manually and programmatically 
   self.dialog_became_active_observable = renoise.Document.ObservableBang()
 
   --- when dialog looses focus
-  -- TODO make it work when invoked manually and/or programatically 
+  -- TODO make it work when invoked manually and/or programmatically 
   --self.dialog_resigned_active_observable = renoise.Document.ObservableBang()
 
   -- private --
@@ -70,7 +70,7 @@ function vDialog:__init(...)
 end
 
 --------------------------------------------------------------------------------
--- create/re-use existing dialog 
+-- create/reuse existing dialog 
 
 function vDialog:show()
   TRACE("vDialog:show()")

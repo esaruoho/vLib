@@ -65,7 +65,7 @@ function vPrompt.prompt_for_string(str_default,str_description,str_title)
 end
 
 -------------------------------------------------------------------------------
--- color prompt is pseudo-modal: will re-use an already opened dialog
+-- color prompt is pseudo-modal: will reuse an already opened dialog
 -- (not 'real' modal since we need to receive idle time notifications...)
 -- @param callback (function)
 -- @param active_color (table{r,g,b}) 
@@ -168,7 +168,7 @@ function vPrompt.prompt_for_color(callback,active_color,palette)
     renoise.tool().app_idle_observable:add_notifier(on_idle)
   end
 
-  -- check for existing dialog and re-use
+  -- check for existing dialog and reuse
   if vPrompt.color_prompt.dialog and vPrompt.color_prompt.dialog.visible then  
     vb = vPrompt.color_prompt.vb
     vPrompt.color_prompt.dialog:show()
@@ -256,7 +256,7 @@ function vPrompt.prompt_for_color(callback,active_color,palette)
 end
 
 -------------------------------------------------------------------------------
--- pseudo-modal custom prompt: will re-use an already opened dialog
+-- pseudo-modal custom prompt: will reuse an already opened dialog
 -- @param callback (function)
 -- @param content_view (renoise.Views.Rack)
 
@@ -269,7 +269,7 @@ function vPrompt.show_custom_prompt(title,content_view,key_handler)
 
   local vb = renoise.ViewBuilder()
 
-  -- check for existing dialog and re-use
+  -- check for existing dialog and reuse
   if vPrompt.custom_prompt.dialog and vPrompt.custom_prompt.dialog.visible then  
     vb = vPrompt.custom_prompt.vb
     vPrompt.custom_prompt.dialog:show()
@@ -297,7 +297,7 @@ end
 function vPrompt.close_custom_prompt()
   TRACE("vPrompt.close_custom_prompt()")
 
-  -- check for existing dialog and re-use
+  -- check for existing dialog and reuse
   if vPrompt.custom_prompt.dialog and vPrompt.custom_prompt.dialog.visible then  
     vPrompt.custom_prompt.dialog:close()
   end

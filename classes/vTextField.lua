@@ -134,7 +134,7 @@ function vTextField:build()
 end
 
 --------------------------------------------------------------------------------
--- re-usable (make it possible to define separate build() methods for
+-- reusable (make it possible to define separate build() methods for
 -- classes that inherit this one
 
 function vTextField:build_textfield()

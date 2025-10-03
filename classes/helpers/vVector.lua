@@ -64,7 +64,7 @@ end
 
 --------------------------------------------------------------------------------
 -- count checked items ("checked" is key, value is boolean)
--- TODO depricated, use match instead
+-- TODO deprecated, use match instead
 -- @param t (table)
 -- @return int
 
@@ -87,7 +87,7 @@ end
 
 --------------------------------------------------------------------------------
 -- return first item whose "checked" attribute is true
--- TODO depricated, use match instead
+-- TODO deprecated, use match instead
 -- @param t (table)
 -- @return table
 

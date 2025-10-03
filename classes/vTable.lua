@@ -719,7 +719,7 @@ function vTable:get_col_margin(idx)
 end
 
 --------------------------------------------------------------------------------
--- DEPRICATED just here for compability
+-- DEPRECATED just here for compatibility
 
 function vTable:get_item_by_id(item_id)
   --TRACE("vTable:get_item_by_id(item_id)")
@@ -757,7 +757,7 @@ function vTable:get_header_ctype(key)
 end
 
 --------------------------------------------------------------------------------
---- specify a single header defitions by its key 
+--- specify a single header definitions by its key 
 -- @param key (string), the column key
 -- @param member (string), e.g.'notifier'
 -- @param value (variant), e.g. a callback function or other type

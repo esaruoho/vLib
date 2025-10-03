@@ -86,7 +86,7 @@ function vTree:__init(...)
   self.row_offset = property(self.get_row_offset,self.set_row_offset)
   self._row_offset = 0
 
-  --- (int) amount of identation in pixels
+  --- (int) amount of indentation in pixels
   self.indent = property(self.get_indent,self.set_indent)
   self._indent = vTree.INDENT_DEFAULT
 
@@ -369,7 +369,7 @@ function vTree:update()
   self.skipped_row_idx = 1
   self:update_tree(self._data)
 
-  -- show rows, hide superflous rows 
+  -- show rows, hide superfluous rows 
   for row_idx = 1,self.num_rows do
     local row_elm = self.vb.views[self:get_elm_id("row",row_idx)]
     row_elm.visible = (row_idx <= self.update_row_idx) and true or false

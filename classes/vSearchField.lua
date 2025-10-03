@@ -298,7 +298,7 @@ function vSearchField:match_items()
 end
 
 --------------------------------------------------------------------------------
--- loosing focus is when we finalize the match (set the index or clear)
+-- losing focus is when we finalize the match (set the index or clear)
 -- (typing was completed with a return, or we clicked elsewhere)
 
 function vSearchField:lost_focus()
