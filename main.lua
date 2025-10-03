@@ -16,6 +16,7 @@ _trace_filters = nil
 _clibroot = "classes/"
 _vlibroot = "classes/"
 _vlib_img = _vlibroot.."images/"
+separator = package.config:sub(1,1)  -- Gets \ for Windows, / for Unix
 
 require (_clibroot.."cLib")
 require (_clibroot.."cDebug")
